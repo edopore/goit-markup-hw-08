@@ -764,24 +764,24 @@ header {
     flex-direction: column;
     gap: 5px;
   }
-  .nav-bar__links {
-    padding: 16px 0;
-    gap: 50px;
-  }
   .container {
     width: 100%;
   }
   .values__solutions {
     flex-wrap: wrap;
     justify-content: center;
+    gap: 10%;
   }
-  .services__lists {
-    flex-wrap: wrap;
-    justify-content: center;
+  .services {
+    display: none;
   }
   .team__cards {
     flex-wrap: wrap;
     justify-content: center;
+    gap: 10%;
+  }
+  .team-card {
+    margin-bottom: 10%;
   }
   .clients__links {
     flex-wrap: wrap;
@@ -789,7 +789,25 @@ header {
   }
   .address {
     flex-wrap: wrap;
-    align-items: flex-end;
+    justify-content: center;
+    text-align: center;
+  }
+  .footer-links {
+    justify-content: center;
+  }
+  .link-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .subscribe-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5%;
+  }
+  .subscribe-form .subscribe-form__btn {
+    margin-top: 5%;
   }
 }
 @media screen and (max-width: 480px) {
@@ -805,10 +823,6 @@ header {
   }
   .container {
     width: 480px;
-  }
-  .values__solutions {
-    flex-direction: column;
-    align-items: center;
   }
   .values__card {
     width: 93%;
@@ -831,9 +845,28 @@ header {
   .clients__links {
     align-items: center;
   }
+  .section--footer {
+    padding: 0px;
+  }
   .address {
+    text-align: center;
+    justify-content: center;
+  }
+  .address-links {
+    text-align: center;
+    width: 50%;
+  }
+  .link-info {
     flex-direction: column;
-    align-items: start;
+  }
+  .link-info h2 {
+    text-align: center;
+  }
+  .subscribe-form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
   }
   .modal {
     width: 100%;
