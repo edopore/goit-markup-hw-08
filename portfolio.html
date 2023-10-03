@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+    />
+    <link rel="stylesheet" href="./sass/main.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container flex">
+        <h2 class="logo flex m-0 btn"><a href="./index.html">WebStudio</a></h2>
+        <nav class="nav-bar">
+          <ul class="nav-bar__links m-0 p-0">
+            <li class="nav-bar__links">
+              <a href="./index.html">Estudio</a>
+            </li>
+            <li class="nav-bar__links--link-current">
+              <a href="./portfolio.html">Portafolio</a>
+            </li>
+            <li class="nav-bar__links"><a href="#">Contactos</a></li>
+          </ul>
+        </nav>
+        <ul class="contact-nav flex flex--links">
+          <li class="contact-nav--contact flex">
+            <svg class="contact-bar--svg-contact">
+              <use href="./images/icons/icons.svg#icon-mail"></use>
+            </svg>
+            <a href="mailto:info@devstudio.com">info@devstudio.com</a>
+          </li>
+          <li class="contact-nav--contact flex">
+            <svg class="contact-bar--svg-contact">
+              <use href="./images/icons/icons.svg#icon-smartphone"></use>
+            </svg>
+            <a href="tel:+525555296000">+52 55 5529 6000</a>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <main class="container">
+      <section class="portfolio section">
+        <div class="container">
+          <ul class="portfolio__btn-filter">
+            <li>
+              <button class="portfolio__btn-lst btn" type="button">Todo</button>
+            </li>
+            <li>
+              <button class="portfolio__btn-lst btn" type="button">
+                Sitio-web
+              </button>
+            </li>
+            <li>
+              <button class="portfolio__btn-lst btn" type="button">
+                Aplicaciones
+              </button>
+            </li>
+            <li>
+              <button class="portfolio__btn-lst btn" type="button">
+                Diseño
+              </button>
+            </li>
+            <li>
+              <button class="portfolio__btn-lst btn" type="button">
+                Marketing
+              </button>
+            </li>
+          </ul>
+          <ul class="portfolio_cards">
+            <li class="card__info">
+              <div class="info__image-container">
+                <img
+                  class="img"
+                  src="./images/tecnoduck.jpg"
+                  alt="tecnoduck"
+                  width="370"
+                />
+                <p class="image-container__p-description m-0 transition">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio
+                  dolores quidem impedit optio numquam voluptatum at inventore
+                  laborum cumque accusamus nemo, sequi in tempora sint porro
+                  alias consectetur repellat ratione?
+                </p>
+              </div>
+              <div class="info__description-container m-0">
+                <h2 class="description-container__h2 m-0">Tecnoduck</h2>
+                <p class="description-container__p m-0">Sitio-web</p>
+              </div>
+            </li>
+            <li class="card__info">
+              <div class="info__image-container">
+                <img
+                  class="img"
+                  src="./images/poster.jpg"
+                  alt="poster"
+                  width="370"
+                />
+                <p class="image-container__p-description m-0 transition">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio
+                  dolores quidem impedit optio numquam voluptatum at inventore
+                  laborum cumque accusamus nemo, sequi in tempora sint porro
+                  alias consectetur repellat ratione?
+                </p>
+              </div>
+              <div class="info__description-container m-0">
+                <h2 class="description-container__h2 m-0">
+                  Póster de Nueva Orleans vs Estrella Dorada
+                </h2>
+                <p class="description-container__p m-0">Diseño</p>
+              </div>
+            </li>
+            <li class="card__info">
+              <div class="info__image-container">
+                <img
+                  class="img"
+                  src="./images/seafood.jpg"
+                  alt="restaurant-seafood"
+                  width="370"
+                />
+                <p class="image-container__p-description m-0 transition">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio
+                  dolores quidem impedit optio numquam voluptatum at inventore
+                  laborum cumque accusamus nemo, sequi in tempora sint porro
+                  alias consectetur repellat ratione?
+                </p>
+              </div>
+              <div class="info__description-container m-0">
+                <h2 class="description-container__h2 m-0">
+                  Restaurante Seafood
+                </h2>
+                <p class="description-container__p m-0">Aplicaciones</p>
+              </div>
+            </li>
+            <li class="card__info">
+              <div class="info__image-container">
+                <img
+                  class="img"
+                  src="./images/headphone.jpg"
+                  alt="project-prime"
+                  width="370"
+                />
+                <p class="image-container__p-description m-0 transition">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio
+                  dolores quidem impedit optio numquam voluptatum at inventore
+                  laborum cumque accusamus nemo, sequi in tempora sint porro
+                  alias consectetur repellat ratione?
+                </p>
+              </div>
+              <div class="info__description-container m-0">
+                <h2 class="description-container__h2 m-0">Proyecto Prime</h2>
+                <p class="description-container__p m-0">Marketing</p>
+              </div>
+            </li>
+            <li class="card__info">
+              <div class="info__image-container">
+                <img
+                  class="img"
+                  src="./images/boxes.jpg"
+                  alt="project-boxes"
+                  width="370"
+                />
+                <p class="image-container__p-description m-0 transition">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio
+                  dolores quidem impedit optio numquam voluptatum at inventore
+                  laborum cumque accusamus nemo, sequi in tempora sint porro
+                  alias consectetur repellat ratione?
+                </p>
+              </div>
+              <div class="info__description-container m-0">
+                <h2 class="description-container__h2 m-0">Proyecto Cajas</h2>
+                <p class="description-container__p m-0">Aplicaciones</p>
+              </div>
+            </li>
+            <li class="card__info">
+              <div class="info__image-container">
+                <img
+                  class="img"
+                  src="./images/inspiration.jpg"
+                  alt="inspiration-has-no-limits"
+                  width="370"
+                />
+                <p class="image-container__p-description m-0 transition">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio
+                  dolores quidem impedit optio numquam voluptatum at inventore
+                  laborum cumque accusamus nemo, sequi in tempora sint porro
+                  alias consectetur repellat ratione?
+                </p>
+              </div>
+              <div class="info__description-container m-0">
+                <h2 class="description-container__h2 m-0">
+                  La inspiración no tiene límites
+                </h2>
+                <p class="description-container__p m-0">Sitio-web</p>
+              </div>
+            </li>
+            <li class="card__info">
+              <div class="info__image-container">
+                <img
+                  class="img"
+                  src="./images/limited-edition.jpg"
+                  alt="limited-edition"
+                  width="370"
+                />
+                <p class="image-container__p-description m-0 transition">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio
+                  dolores quidem impedit optio numquam voluptatum at inventore
+                  laborum cumque accusamus nemo, sequi in tempora sint porro
+                  alias consectetur repellat ratione?
+                </p>
+              </div>
+              <div class="info__description-container m-0">
+                <h2 class="description-container__h2 m-0">Edición Limitada</h2>
+                <p class="description-container__p m-0">Diseño</p>
+              </div>
+            </li>
+            <li class="card__info">
+              <div class="info__image-container">
+                <img
+                  class="img"
+                  src="./images/label.jpg"
+                  alt="project-lab"
+                  width="370"
+                />
+                <p class="image-container__p-description m-0 transition">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio
+                  dolores quidem impedit optio numquam voluptatum at inventore
+                  laborum cumque accusamus nemo, sequi in tempora sint porro
+                  alias consectetur repellat ratione?
+                </p>
+              </div>
+              <div class="info__description-container m-0">
+                <h2 class="description-container__h2 m-0">Proyecto LAB</h2>
+                <p class="description-container__p m-0">Marketing</p>
+              </div>
+            </li>
+            <li class="card__info">
+              <div class="info__image-container">
+                <img
+                  class="img"
+                  src="./images/growth-business.jpg"
+                  alt="growth-bussiness"
+                  width="370"
+                />
+                <p class="image-container__p-description m-0 transition">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio
+                  dolores quidem impedit optio numquam voluptatum at inventore
+                  laborum cumque accusamus nemo, sequi in tempora sint porro
+                  alias consectetur repellat ratione?
+                </p>
+              </div>
+              <div class="info__description-container m-0">
+                <h2 class="description-container__h2 m-0">
+                  Negocio en Crecimiento
+                </h2>
+                <p class="description-container__p m-0">Aplicaciones</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <footer class="contact section--footer">
+      <div class="container">
+        <address class="address">
+          <ul class="address-links">
+            <li class="link-info">
+              <h2 class="logo m-0">
+                <a href="./index.html">WebStudio</a>
+              </h2>
+              <p class="link-info__address m-0">
+                Calz. Ticomán 500, Ciudad de México, CDMX, México
+              </p>
+              <a
+                class="link-info__action"
+                href="mailto:info@example.com transition"
+                >info@example.com</a
+              >
+              <a class="link-info__action" href="tel:+525555296000 transition"
+                >+52 55 5529 6000</a
+              >
+            </li>
+          </ul>
+          <ul class="team-card__social-links footer-links">
+            <li class="social-link__title">
+              <h3 class="title--initial m-0">ENCUENTRENOS EN</h3>
+            </li>
+            <li class="social-link btn">
+              <svg class="social-link__svg-icon icon-footer">
+                <use href="./images/icons/icons.svg#icon-instagram"></use>
+              </svg>
+            </li>
+            <li class="social-link btn">
+              <svg class="social-link__svg-icon icon-footer transition">
+                <use href="./images/icons/icons.svg#icon-twitter"></use>
+              </svg>
+            </li>
+            <li class="social-link btn">
+              <svg class="social-link__svg-icon icon-footer transition">
+                <use href="./images/icons/icons.svg#icon-facebook"></use>
+              </svg>
+            </li>
+            <li class="social-link btn">
+              <svg class="social-link__svg-icon icon-footer transition">
+                <use href="./images/icons/icons.svg#icon-linkedin"></use>
+              </svg>
+            </li>
+          </ul>
+          <ul class="footer-form m-0">
+            <li>
+              <h3 class="footer-form__title">
+                SUSCRÍBASE AL BOLETIN INFORMATIVO
+              </h3>
+            </li>
+            <li>
+              <form class="subscribe-form" name="subscribe-form" action="">
+                <label for="email">
+                  <input
+                    type="email"
+                    id="email"
+                    class="subscribe-form__email"
+                    placeholder="Correo Electrónico"
+                  />
+                </label>
+                <button
+                  type="submit"
+                  class="subscribe-form__btn title__list--btn-sol"
+                >
+                  Suscribase
+                  <svg class="subscribe-form__svg">
+                    <use href="./images/icons/icons.svg#icon-send"></use>
+                  </svg>
+                </button>
+              </form>
+            </li>
+          </ul>
+        </address>
+      </div>
+    </footer>
+  </body>
+</html>

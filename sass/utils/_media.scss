@@ -1,0 +1,99 @@
+@media screen and (max-width: 1200px) {
+  body {
+    background-color: red;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    background-color: green;
+  }
+
+  .flex--links {
+    flex-direction: column;
+    gap: 5px;
+  }
+  .nav-bar__links {
+    padding: 16px 0;
+    gap: 50px;
+  }
+  .container {
+    width: 100%;
+  }
+  .values__solutions {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .services__lists {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .team__cards {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .clients__links {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .address {
+    flex-wrap: wrap;
+    align-items: flex-end;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  body {
+    background-color: yellow;
+  }
+  .title__list--h1 {
+    width: 360px;
+    font-size: 30px;
+  }
+  .header {
+    visibility: hidden;
+  }
+  .container {
+    width: 480px;
+  }
+  .values__solutions {
+    flex-direction: column;
+    align-items: center;
+  }
+  .values__card {
+    width: 93%;
+    margin-bottom: 10%;
+    h2 {
+      display: flex;
+      justify-content: center;
+    }
+  }
+  .services {
+    display: none;
+  }
+  .team-card {
+    width: 93%;
+    margin-bottom: 10%;
+  }
+  .team-card__image {
+    width: 100%;
+  }
+  .clients__links {
+    align-items: center;
+  }
+  .address {
+    flex-direction: column;
+    align-items: start;
+  }
+  .modal {
+    width: 100%;
+  }
+  .portfolio__btn-filter {
+    flex-direction: column;
+    align-items: center;
+  }
+  .portfolio_cards {
+    flex-direction: column;
+    align-items: center;
+  }
+}

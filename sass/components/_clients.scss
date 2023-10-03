@@ -1,0 +1,30 @@
+/*Section Clients*/
+.clients__links {
+  display: flex;
+  gap: 30px;
+}
+.client-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 18px 0px;
+  width: 170px;
+  border: 1px solid $desc-font-color;
+  border-radius: 4px;
+
+  &:hover {
+    cursor: pointer;
+    border-color: $blue-font-color;
+    transform: scale(1.2);
+    .client-card__logo {
+      fill: $blue-font-color;
+    }
+  }
+}
+.client-card__logo {
+  fill: $desc-font-color;
+  padding: 10px;
+  width: 106px;
+  height: 52px;
+  transition: scale $time-animation $cubic-bezier-animation;
+}

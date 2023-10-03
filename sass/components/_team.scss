@@ -1,0 +1,50 @@
+/*Section team*/
+.team {
+  background-color: $team-bg-color;
+}
+.team__cards {
+  display: flex;
+  justify-content: space-between;
+}
+.team-card {
+  border: 1px;
+  width: 270px;
+  border-style: solid;
+  border-color: $card-portfolio-border;
+  border-radius: 0px 0px 4px 4px;
+  box-shadow: 2px 3px $desc-font-color-shadow;
+}
+
+.team-card__name {
+  color: var($title-font-color);
+}
+
+.team-card__social-links {
+  padding: 10px 0px;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  transition: background-color $time-animation $cubic-bezier-animation;
+  .social-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 100%;
+    &:hover {
+      background-color: $blue-font-color;
+      cursor: pointer;
+      transform: scale(1.2);
+    }
+    &:hover > .social-link__svg-icon {
+      fill: $white;
+    }
+  }
+}
+.social-link__svg-icon {
+  fill: $desc-font-color;
+  width: 20px;
+  height: 20px;
+}
