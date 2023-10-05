@@ -1,16 +1,10 @@
 @media screen and (max-width: 1200px) {
-  body {
-    background-color: red;
-  }
   .container {
     width: 100%;
   }
 }
 
 @media screen and (max-width: 768px) {
-  body {
-    background-color: green;
-  }
   .flex {
     justify-content: space-evenly;
   }
@@ -43,6 +37,12 @@
   .clients__links {
     flex-wrap: wrap;
     justify-content: center;
+  }
+  .portfolio_cards {
+    justify-content: space-evenly;
+  }
+  .card__info {
+    width: 47%;
   }
   .address {
     flex-wrap: wrap;
