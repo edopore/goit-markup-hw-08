@@ -14,7 +14,7 @@ header {
   gap: 20px;
 }
 .logo {
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   text-align: right;
   font-style: normal;
   color: $blue-font-color;
@@ -30,7 +30,7 @@ header {
 .nav-bar__links--link-current {
   position: relative;
   &::after {
-    content: '';
+    content: "";
     position: absolute;
     display: inline-block;
     width: 100%;
@@ -65,8 +65,21 @@ header {
       text-decoration: none;
     }
   }
+  &--mobile {
+    font-weight: 500;
+    font-size: 40px;
+  }
+  &--blue {
+    color: $blue-font-color;
+  }
 }
-
+.contact-nav {
+  &--mobile {
+    font-weight: 500;
+    font-size: 34px;
+    text-align: start;
+  }
+}
 .contact-nav--contact {
   gap: 10px;
   a {

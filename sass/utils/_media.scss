@@ -2,13 +2,21 @@
   body {
     background-color: red;
   }
+  .container {
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 768px) {
   body {
     background-color: green;
   }
-
+  .flex {
+    justify-content: space-evenly;
+  }
+  .nav-bar__links {
+    gap: 10%;
+  }
   .flex--links {
     flex-direction: column;
     gap: 5px;
@@ -64,15 +72,29 @@
   body {
     background-color: yellow;
   }
+  .header {
+    padding: 6% 6%;
+  }
   .title__list--h1 {
     width: 360px;
     font-size: 30px;
   }
-  .header {
-    visibility: hidden;
+  .flex {
+    justify-content: space-between;
+  }
+  .nav-bar,
+  .contact-nav {
+    display: none;
+  }
+  .menu-toggle {
+    display: inline;
+  }
+  .right {
+    display: flex;
+    justify-content: end;
   }
   .container {
-    width: 480px;
+    width: 100%;
   }
   .values__card {
     width: 93%;
@@ -112,8 +134,6 @@
       text-align: center;
     }
   }
-  .title--initial {
-  }
   .subscribe-form {
     display: flex;
     flex-wrap: wrap;
@@ -121,6 +141,9 @@
     gap: 30px;
   }
   .modal {
+    width: 95%;
+  }
+  .input-modal-form {
     width: 100%;
   }
   .portfolio__btn-filter {
