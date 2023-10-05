@@ -5,6 +5,9 @@
 }
 
 @media screen and (max-width: 768px) {
+  .container {
+    width: 100%;
+  }
   .flex {
     justify-content: space-evenly;
   }
@@ -14,9 +17,6 @@
   .flex--links {
     flex-direction: column;
     gap: 5px;
-  }
-  .container {
-    width: 100%;
   }
   .values__solutions {
     flex-wrap: wrap;
@@ -40,9 +40,6 @@
   }
   .portfolio_cards {
     justify-content: space-evenly;
-  }
-  .card__info {
-    width: 47%;
   }
   .address {
     flex-wrap: wrap;
