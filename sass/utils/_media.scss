@@ -1,71 +1,4 @@
-@media screen and (max-width: 1200px) {
-  .container {
-    width: 100%;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .container {
-    width: 100%;
-  }
-  .flex {
-    justify-content: space-evenly;
-  }
-  .nav-bar__links {
-    gap: 10%;
-  }
-  .flex--links {
-    flex-direction: column;
-    gap: 5px;
-  }
-  .values__solutions {
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 10%;
-  }
-  .services {
-    display: none;
-  }
-  .team__cards {
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 10%;
-  }
-  .team-card {
-    margin-bottom: 10%;
-  }
-  .clients__links {
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  .portfolio_cards {
-    justify-content: space-evenly;
-  }
-  .address {
-    flex-wrap: wrap;
-    justify-content: center;
-    text-align: center;
-  }
-  .footer-links {
-    justify-content: center;
-  }
-  .link-info {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  .subscribe-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 5%;
-    .subscribe-form__btn {
-      margin-top: 5%;
-    }
-  }
-}
-
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 480px) {
   .header {
     padding: 6% 6%;
   }
@@ -90,6 +23,10 @@
   .container {
     width: 100%;
   }
+  .values__solutions {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
   .values__card {
     width: 93%;
     margin-bottom: 10%;
@@ -101,6 +38,10 @@
   .services {
     display: none;
   }
+  .team__cards {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
   .team-card {
     width: 93%;
     margin-bottom: 10%;
@@ -109,18 +50,24 @@
     width: 100%;
   }
   .clients__links {
+    flex-wrap: wrap;
     align-items: center;
+    justify-content: center;
   }
   .section--footer {
     padding: 0px;
   }
   .address {
+    flex-wrap: wrap;
     text-align: center;
     justify-content: center;
   }
   .address-links {
     text-align: center;
     width: 50%;
+  }
+  .footer-links {
+    justify-content: center;
   }
   .link-info {
     flex-direction: column;
@@ -138,7 +85,7 @@
     width: 95%;
   }
   .input-modal-form {
-    width: 100%;
+    width: 360px;
   }
   .portfolio__btn-filter {
     width: 95%;
@@ -147,5 +94,121 @@
   .portfolio_cards {
     flex-direction: column;
     align-items: center;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .header {
+    padding: 0;
+  }
+  .nav-bar,
+  .contact-nav {
+    display: inline;
+  }
+  .menu-toggle {
+    display: none;
+  }
+  .container {
+    width: 100%;
+  }
+  .flex {
+    justify-content: space-around;
+  }
+  .nav-bar__links {
+    gap: 10%;
+  }
+  .flex--links {
+    flex-direction: column;
+    gap: 5px;
+  }
+  .values__solutions {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10%;
+  }
+  .values__card {
+    width: 270px;
+  }
+  .services {
+    display: none;
+  }
+  .team__cards {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10%;
+  }
+  .team-card {
+    margin-bottom: 10%;
+    width: 270px;
+  }
+  .clients__links {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .portfolio_cards {
+    flex-direction: inherit;
+    justify-content: space-around;
+  }
+  .address {
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+  }
+  .footer-links {
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+  }
+  .link-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .subscribe-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5%;
+    .subscribe-form__btn {
+      margin-top: 5%;
+    }
+  }
+  .modal {
+    width: 528px;
+  }
+  .input-modal-form {
+    width: 448px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
+
+  .values__solutions {
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    gap: 0%;
+  }
+  .team__cards {
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 0%;
+  }
+  .address {
+    flex-wrap: nowrap;
+  }
+  .address-links {
+    width: 231px;
+  }
+  .link-info {
+    text-align: left;
+    h2 {
+      text-align: left;
+    }
+  }
+  .subscribe-form {
+    flex-direction: row;
   }
 }
