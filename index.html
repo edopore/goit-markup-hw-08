@@ -44,18 +44,8 @@
           aria-expanded="false"
           aria-controls="mobile-menu"
         >
-          <svg
-            width="24"
-            height="24"
-            fill="currentColor"
-            viewBox="0 0 20 20"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              fill-rule="evenodd"
-              d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-              clip-rule="evenodd"
-            ></path>
+          <svg class="svg-open-menu">
+            <use href="./images/icons/icons.svg#icon-menu-toggle"></use>
           </svg>
         </button>
       </div>
@@ -163,7 +153,12 @@
           <ul class="services__lists">
             <li class="services__images">
               <div class="service-container">
-                <img src="./images/keyboard.jpg" alt="service 1" width="370" />
+                <img
+                  srcset="./images/keyboard.jpg 1x, ./images/keyboardx2.jpg 2x"
+                  src="./images/keyboard.jpg"
+                  alt="service 1"
+                  width="370"
+                />
                 <h3 class="service-container__title m-0">
                   APLICACIONES DE ESCRITORIO
                 </h3>
@@ -171,7 +166,12 @@
             </li>
             <li class="services__images">
               <div class="service-container">
-                <img src="./images/phone.jpg" alt="service 2" width="370" />
+                <img
+                  srcset="./images/phone.jpg 1x, ./images/phonex2.jpg 2x"
+                  src="./images/phone.jpg"
+                  alt="service 2"
+                  width="370"
+                />
                 <h3 class="service-container__title m-0">
                   APLICACIONES MÓVILES
                 </h3>
@@ -180,6 +180,10 @@
             <li class="services__images">
               <div class="service-container">
                 <img
+                  srcset="
+                    ./images/color-palette.jpg   1x,
+                    ./images/color-palettex2.jpg 2x
+                  "
                   src="./images/color-palette.jpg"
                   alt="service 3"
                   width="370"
@@ -199,12 +203,13 @@
             <li class="team-card">
               <img
                 class="team-card__image"
+                srcset="./images/andres.jpg 1x, ./images/andresx2.jpg 2x"
                 src="./images/andres.jpg"
                 alt="andres-cubo"
                 width="270"
               />
               <h3 class="team-card__name">Andrés Cubo</h3>
-              <p img class="team-card__description">Diseñador de Productos</p>
+              <p class="team-card__description">Diseñador de Productos</p>
               <ul class="team-card__social-links">
                 <li class="social-link btn">
                   <svg class="social-link__svg-icon">
@@ -232,6 +237,7 @@
               <img
                 img
                 class="team-card__image"
+                srcset="./images/carla.jpg 1x, ./images/carlax2.jpg 2x"
                 src="./images/carla.jpg"
                 alt="carla-palacios"
                 width="270"
@@ -264,6 +270,7 @@
             <li class="team-card">
               <img
                 class="team-card__image"
+                srcset="./images/mario.jpg 1x, ./images/mariox2.jpg 2x"
                 src="./images/mario.jpg"
                 alt="mario-dorado"
                 width="270"
@@ -296,6 +303,7 @@
             <li class="team-card">
               <img
                 class="team-card__image"
+                srcset="./images/pablo.jpg 1x, ./images/pablox2.jpg 2x"
                 src="./images/pablo.jpg"
                 alt="pablo-mijangos"
                 width="270"
@@ -530,18 +538,8 @@
       id="mobile-menu"
     >
       <button class="menu-toggle js-close-menu btn btn-close-modal">
-        <svg
-          fill="currentColor"
-          viewBox="0 0 20 20"
-          xmlns="http://www.w3.org/2000/svg"
-          width="24"
-          height="24"
-        >
-          <path
-            fill-rule="evenodd"
-            d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
-            clip-rule="evenodd"
-          ></path>
+        <svg class="svg-close-modal">
+          <use href="./images/icons/icons.svg#icon-close_24px"></use>
         </svg>
       </button>
 

@@ -783,7 +783,12 @@ header {
 
 .menu-toggle:hover,
 .menu-toggle:focus {
-  fill: red;
+  fill: #2196f3;
+}
+
+.svg-open-menu {
+  width: 25px;
+  height: 18px;
 }
 
 .menu-container {
@@ -963,7 +968,7 @@ header {
   }
   .nav-bar,
   .contact-nav {
-    display: inline;
+    display: flex;
   }
   .menu-toggle {
     display: none;

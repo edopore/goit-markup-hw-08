@@ -18,9 +18,12 @@
 
 .menu-toggle:hover,
 .menu-toggle:focus {
-  fill: red;
+  fill: $blue-font-color;
 }
-
+.svg-open-menu {
+  width: 25px;
+  height: 18px;
+}
 .menu-container {
   position: fixed;
   top: 0;
