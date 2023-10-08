@@ -1,4 +1,4 @@
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 300px) {
   .header {
     padding: 6% 6%;
   }
@@ -185,7 +185,10 @@
   .container {
     width: 1200px;
   }
-
+  .flex--links {
+    flex-direction: row;
+    justify-content: space-around;
+  }
   .values__solutions {
     flex-wrap: nowrap;
     justify-content: space-around;

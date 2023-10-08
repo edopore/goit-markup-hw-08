@@ -864,7 +864,7 @@ header {
   background-color: rgba(33, 33, 33, 0.2);
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 300px) {
   .header {
     padding: 6% 6%;
   }
@@ -1048,6 +1048,10 @@ header {
 @media screen and (min-width: 1200px) {
   .container {
     width: 1200px;
+  }
+  .flex--links {
+    flex-direction: row;
+    justify-content: space-around;
   }
   .values__solutions {
     flex-wrap: nowrap;
